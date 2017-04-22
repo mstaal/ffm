@@ -1,19 +1,5 @@
 <html>
     <head>
-      <?php
-      $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-      $android = strstr($_SERVER['HTTP_USER_AGENT'],'Android');
-
-      if ($iphone == true or $android == true){
-        $dicesize = 45;
-        //Visitor is browsing on an iPhone, redirect them to your web app page
-        // header("Location: mobile.php");
-      }
-      else {
-        //Your visitor is not browsing on an iPhone
-        //Load your non iPhone optimized website here
-      }
-      ?>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
         <script src="fastclick.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
