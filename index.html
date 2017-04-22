@@ -1,10 +1,6 @@
 <html manifest="erning.appcache">
     <head>
       <?php
-      $flader = 6;
-      $dicesize = 50;
-      $arWidth = 310;
-
       $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
       $android = strstr($_SERVER['HTTP_USER_AGENT'],'Android');
 
@@ -38,34 +34,20 @@
         <div id="upper">
         <br>
         </div>
-        <h1>Erning :-)</h1>
+        <h1>Farfars Messengerfavoritter</h1>
         <div class="center" id="around" style="
             max-width:<?php echo $arWidth?>px;
             min-height:<?php echo $dicesize?>px;
             height:<?php echo $dicesize?>px;">
-          <div class="center" id="lockdiv" style="display:none;">
-            <button type="button" onclick="locking();" class="button small orange" id="lock">
-                Lock
-            </button>
-          </div>
           <div id="terninger">
           </div>
         </div>
         <br>
         <div class="center">
-            <select id="nummer" name="nummer" class="styled-select">
-              <?php
-               for ($i=1; $i < $flader + 1; $i++) {
-              ?>
-                   <option value="<?php echo $i ?>"><?php echo $i ?></option>
-              <?php
-                 }
-              ?>
-            </select>
           <br><br>
-            <button type="button" onclick="makeDices(<?php echo $dicesize; ?>);"
+            <button type="button" onclick="window.open(fb-messenger-public://user-thread/lennart.staalolsen);"
                 class="button large blue" id="shake">
-              Shake!
+              Lennart Staal-Olsen
             </button>
             <button type="button" onclick="hiding();" class="button large red" id="hide">
               Hide
@@ -73,14 +55,8 @@
         </div>
         <div id="footer">
         <p>
-<!--           Proudly powered by <a href="https://www.random.org/" target="_blank">Random.org</a>
-          <br> -->
-          Copyright &copy; erning.dk <?php echo date('Y'); ?>
           <br>
         </p>
         </div>
-          <script>
-            document.getElementById("shake").click();
-          </script>
     </body>
 </html>
