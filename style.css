@@ -135,7 +135,7 @@ div#lockdiv {
     text-shadow: 1px 1px #666;
     }
 
-button + button { margin-top: 10px; }
+.button + .button { margin-top: 10px; }
 
 .button:hover {
     background-position: 0 -48px;
