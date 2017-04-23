@@ -59,8 +59,8 @@ table.center {
   }
 
 div.center {
-    text-align: justify;
-    text-align-last: justify;
+    text-align: center;
+    text-align-last: center;
     text-justify: distribute-all-lines;
     margin-left:20px;
     margin-right:20px;
