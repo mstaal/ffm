@@ -62,8 +62,8 @@ div.center {
     text-align: justify;
     text-align-last: justify;
     text-justify: distribute-all-lines;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:40%;
+    margin-right:40%;
     position:relative;
   }
 
